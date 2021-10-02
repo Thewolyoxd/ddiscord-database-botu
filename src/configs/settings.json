@@ -1,6 +1,6 @@
 {
-  "token": "",
-  "prefix": [],
-  "mongoUrl": "",
-  "owners": []
+  "token": "ODY3NzYzNDI4NzE4MjgwNzM0.YPl1qw.tcSqJyuYj5kXsMhxlMbbLajV7rQ",
+  "prefix": [".","w/"],
+  "mongoUrl": "mongodb+srv://thewolyoxd:thewolyoxd@thewolyoxd.u92ds.mongodb.net/thewolyoxd?retryWrites=true&w=majority",
+  "owners": [810161653756198933]
 }
