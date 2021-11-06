@@ -56,12 +56,12 @@ class Codesty extends Client {
     return false;
   }
 
- ok = "<:ok_wency:854715939819094017>"
- no = "<:no_wency:854715940045717504>"
- serverID = "852194278201360404"
- logChannel = "852194283280662552"
- allowedOwners = ["323301869319618560" , "335115272161853442", "352558230326607873", "223209705814753280", "94238588211822592", "710622150071025704", "263287679767019520"]
- owner = ["335115272161853442", "323301869319618560"]
+ ok = "✅"
+ no = "❌"
+ serverID = "905520135819890729"
+ logChannel = "906570500183035944"
+ allowedOwners = ["810161653756198933"]
+ owner = ["810161653756198933"]
 
 
  async yolla(mesaj, msg, kanal) {
@@ -147,8 +147,8 @@ const init = async () => {
     delete require.cache[require.resolve(`./events/${file}`)];
   });
 
-client.login("");
-mongoose.connect('', {useNewUrlParser: true, useUnifiedTopology: true})
+client.login(process.env.token);
+mongoose.connect(process.env.mongourl, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(client.logger.log("Mongo Bağlantısı Kuruldu ✔", "log"));
 };
 
