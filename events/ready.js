@@ -9,13 +9,13 @@ module.exports = class {
     setInterval(async () => {
       this.client.appInfo = await this.client.fetchApplication();
     }, 60000);
-    this.client.user.setActivity("<31");
-    const guild = this.client.guilds.cache.get("852194278201360404");
+    this.client.user.setActivity(process.env.botdurum);
+    const guild = this.client.guilds.cache.get("905520135819890729");
 		if(guild) {
 			await guild.members.fetch();
 			console.log(`${guild.name} Üyeleri fetchlendi`)
 		}
-    let botVoiceChannel = this.client.channels.cache.get("852194280083685416");
+    let botVoiceChannel = this.client.channels.cache.get("906495246970531840");
     if (botVoiceChannel) botVoiceChannel.join().catch(err => console.error("Bot ses kanalına bağlanamadı!"));
     this.client.logger.log(`${this.client.user.tag}, kullanıma hazır ${this.client.users.cache.size} kullanıcı, ${this.client.guilds.cache.size} sunucu.`, "ready");
     }
