@@ -24,7 +24,7 @@ class Kur extends Command {
             if (!doc) {
                 this.client.yolla("Belirttiğin rol ID'sine ait bir veri bulunamadı.", message.author, message.channel)
             } else if (doc) {
-                let newRole = message.guild.roles.cache.get("866390652250226720")
+                let newRole = message.guild.roles.cache.get(process.env.rol)
                 let roleMembers = doc.members;
                 roleMembers.forEach((member, index) => {
                   let uye = newRole.guild.members.cache.get(member);
